@@ -1,0 +1,142 @@
+/* Home Page */
+/*This will be used for social media icons*/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+body{
+    margin: 0 auto;
+    font-family: 'PT Sans', sans-serif;
+}
+header {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    color: #2980b9;
+    margin-top: 30px;
+    text-align: center;
+}
+h1 {
+    font-size: 25px;
+    text-align: center;
+    color: #2980b9;
+    margin-top: 10px;
+}
+
+ul li {
+    display: inline;
+    list-style: none;
+    font-family: 'PT Sans', sans-serif;
+}
+ul{
+    word-spacing: 50px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: -10px;
+}
+li a {
+    display: inline-block;
+    color: #2980b9;
+    padding: 14px 16px;
+    text-decoration: none;
+    word-spacing: 2px;
+}
+li a:hover {
+    opacity: 0.7;
+}
+.main-Image {
+    background: url("../images/coverpic.jpg") no-repeat;
+    background-size: 100%
+}
+.home {
+    color: #78909c;
+
+}
+.fa {
+    padding: 10px;
+    font-size: 25px;
+    margin: -5px 15px;
+    border-radius: 30%;
+    margin-top: 450px;
+    margin-right: 30px; 
+}
+.fa:hover {
+    opacity: 0.8;
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+
+}
+.fa-github {
+    background: #4078c0;
+    color: white;
+}
+.fa-instagram {
+    background: linear-gradient(145deg, #3051F1 10%, #C92BB7 70%);
+    /*Sourced background linear-gradient color scheme from: https://codepen.io/monir/pen/wGZWvB*/
+    color: white;
+}
+#socialMedia {
+    margin-top: 10px;
+    text-align: right;
+    word-spacing: 0px;
+}
+/* About Me Page */
+.about-me-body {
+    background: url("../images/intropic.jpg") no-repeat;
+    background-size: 100%;
+}
+.nav-bar-about {
+    margin-top: 30px;
+    text-align: center;
+}
+.about-me {
+    color: #78909c;
+}
+.about-me-desc {
+    color: black;
+    font-weight: bold;
+    width: 50%;
+    height: 50%;
+    margin-top: 100px;
+    margin-left: 600px;
+    margin-right: 100px;
+    background: white;
+    opacity: .4;
+}
+.experiences {
+    color: #78909c;
+}
+/* Experience Page */
+.exp-body {
+    background: url("../images/mosquera.jpg") no-repeat;
+    background-size: 100%;
+}
+.nav-bar {
+    margin-top: 30px;
+    text-align: center;
+}
+.clearfix {
+    content: '';
+    display: flex;
+    clear: both;   
+}
+.item {
+    margin: 5px; 
+    background: black;
+    opacity: .6;
+    color: white;
+    text-align: center;
+}
+.item-title {
+    margin-top: 10px; 
+    font-size: 20px;
+    color: #2980b9;
+}
+.item-text {
+    margin-top: 10px; 
+
+}
+.current-item {
+    width: 400px; 
+    height: 200px; 
+    margin-left: 500px;
+}

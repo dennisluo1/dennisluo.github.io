@@ -2,6 +2,7 @@
 /*This will be used for social media icons*/
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Karla');
 body{
     margin: 0 auto;
     font-family: 'PT Sans', sans-serif;
@@ -9,16 +10,17 @@ body{
 }
 
 .name-container {
+    margin-top: 25px;
+    margin-left: 25px;
     font-size: 50px;
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
-    margin: 15px 20px;
-}
+}   
 
 .nav-bar {
     background-color: none;
     width: 100%;
-    height: 8vh;
+    height: 6vh;
     display: flex;
     flex-direction: row;
     margin: 0px;
@@ -27,6 +29,7 @@ body{
     -webkit-flex-: 0;
     flex-shrink: 0;
     font-family: "Montserrat", sans-serif;
+    opacity: .8;
 }
 
 .nav-head {
@@ -56,6 +59,9 @@ body{
     justify-content: flex-end;
     padding: 20px;
 }
+.nav-head a:hover {
+    color: #3a7bd5;
+}
 
 .dropdown-content {
     display: none;
@@ -67,52 +73,46 @@ body{
     margin: 15px auto;   
 }
 
-.main-container {
-    position:relative;
-    height:281px;
-    width:550px;
-    margin-top: 50px;
-    margin-left: 450px;
-} 
-
-.main-container img {
+.image-container img {
     height: 400px;
     width: 550px;
     position:absolute;
-    left:0;
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
-}
-
-.main-container img.top:hover {
-    opacity:0;
-}
-
-@keyframes main-containerFadeInOut {
-    0% {
-    opacity:1;
-    }
-    45% {
-    opacity:1;
-    }
-    55% {
-    opacity:0;
-    }
-    100% {
-    opacity:0;
-    }
-}
-
-.main-container img.top {
-    animation-name: main-containerFadeInOut;
-    animation-timing-function: ease-in-out;
+    left: 15%;
+    top: 30%;
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 5s;
+    animation-name: fade;
     animation-iteration-count: infinite;
-    animation-duration: 5s;
-    animation-direction: alternate;
+    animation-duration: 6s;
 }
 
+@-webkit-keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+#image-one {
+    background-color: lightblue;
+}
+#image-two {
+    -webkit-animation-delay: -4s;
+    background-color: yellow;
+}
+#image-three {
+    -webkit-animation-delay: -2s;
+    background-color: lightgreen;
+}
 
 .welcome-message {
     height: 100%;
@@ -168,12 +168,11 @@ li a:hover {
 }
 .fa-instagram {
     background: linear-gradient(145deg, #3051F1 10%, #C92BB7 70%);
-    /*Sourced background linear-gradient color scheme from: https://codepen.io/monir/pen/wGZWvB*/
     color: white;
 }
 #socialMedia {
-    margin-top: 10px;
-    text-align: right;
+    margin-top: 360px;
+    text-align: center;
     word-spacing: 0px;
 }
 /* About Me Page */

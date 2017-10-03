@@ -1,26 +1,130 @@
 /* Home Page */
 /*This will be used for social media icons*/
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 body{
     margin: 0 auto;
     font-family: 'PT Sans', sans-serif;
     width: 100%;
 }
-header {
-    font-family: 'PT Sans', sans-serif;
+
+.name-container {
+    font-size: 50px;
     font-weight: bold;
-    font-size: 60px;
-    color: #2980b9;
-    margin-top: 30px;
-    text-align: center;
-}
-h1 {
-    font-size: 25px;
-    text-align: center;
-    color: #2980b9;
-    margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
+    margin: 15px 20px;
 }
 
+.nav-bar {
+    background-color: none;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+    -webkit-flex-: 0;
+    flex-shrink: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.nav-head {
+    color: black;
+    font-family: "Montserrat", sans-serif;
+}
+
+.my-name {
+    font-family: "Montserrat", sans-serif;
+    font-size: 7.5vh;
+    margin: auto 30px;
+}
+
+.navigation{
+    display: flex;
+    text-align: center;
+    margin: auto;
+    margin-right: 200px;
+}
+
+.nav-head a{
+    color:black;
+    margin: 10px 10px;
+    font-size: 3.5vh;
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin: 15px auto;   
+}
+
+.main-container {
+    position:relative;
+    height:281px;
+    width:550px;
+    margin-top: 50px;
+    margin-left: 450px;
+} 
+
+.main-container img {
+    height: 400px;
+    width: 550px;
+    position:absolute;
+    left:0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+.main-container img.top:hover {
+    opacity:0;
+}
+
+@keyframes main-containerFadeInOut {
+    0% {
+    opacity:1;
+    }
+    45% {
+    opacity:1;
+    }
+    55% {
+    opacity:0;
+    }
+    100% {
+    opacity:0;
+    }
+}
+
+.main-container img.top {
+    animation-name: main-containerFadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+}
+
+
+.welcome-message {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+/* Social Media Buttons */
 ul li {
     display: inline;
     list-style: none;
@@ -30,7 +134,6 @@ ul{
     word-spacing: 50px;
     font-size: 20px;
     text-align: center;
-    margin-top: -10px;
 }
 li a {
     display: inline-block;
@@ -42,21 +145,14 @@ li a {
 li a:hover {
     opacity: 0.7;
 }
-.main-Image {
-    background: url("../images/") no-repeat;
-    background-size: 100%
-}
-.home {
-    color: #78909c;
-
-}
 .fa {
     padding: 10px;
     font-size: 25px;
     margin: -5px 15px;
-    border-radius: 30%;
-    margin-top: 450px;
-    margin-right: 30px; 
+    border-radius: 10%;
+    margin-top: 150px;
+    margin-right: 30px;
+    opacity: .8px; 
 }
 .fa:hover {
     opacity: 0.8;
@@ -86,7 +182,6 @@ li a:hover {
     background-size: 100%;
 }
 .nav-bar-about {
-    margin-top: 30px;
     text-align: center;
 }
 .about-me {
